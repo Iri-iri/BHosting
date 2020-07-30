@@ -119,6 +119,7 @@
   font-weight: 700;
   line-height: 60px;
   text-transform: uppercase;
+  margin-bottom: 28px;
 }
 
 .card {
@@ -133,47 +134,6 @@
   text-align: center;
 }
 
-.card__image {
-  width: 100px;
-  height: 55px;
-  position: relative;
-  background-color: rgba(38, 53, 69, 0.5);
-  color: #ffffff;
-  font-family: "Open Sans";
-  font-size: 2rem;
-  font-weight: 700;
-  text-align: center;
-  margin: 40px auto;
-}
-
-.card__image:before {
-  content: "";
-  position: absolute;
-  top: -25px;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-bottom: 25px solid rgba(38, 53, 69, 0.5);
-}
-
-.card__image:after {
-  content: "";
-  position: absolute;
-  bottom: -25px;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-top: 25px solid rgba(38, 53, 69, 0.5);
-}
-
-.card__image>p {
-  opacity: 1;
-}
-
 .card__description {
   color: #ffffff;
   font-family: "Open Sans - Extrabold";
@@ -181,12 +141,6 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
-}
-
-.support {
-  background-image: url("images/@1X.png");
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .btn {
@@ -280,7 +234,8 @@
   border: 1px solid #00aeef;
   border-radius: 30px;
   padding-left: 60px;
-  padding-right: 405px;
+  /* padding-right: 405px; */
+  width: 50%;
   outline:none;
 }
 
@@ -294,8 +249,56 @@
 
 
 
+.domain-prize_list {
+  padding: 0;
+  width: 40%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
 
+.square {
+  padding: 0 25px;
+  position: relative;
+}
 
+.domain-prize_item {
+  list-style-type: none;
+  font-size: 15px;
+}
+
+.domain-prize_item:before {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  left: 0px;
+  width: 15px;
+	height: 15px;
+  background: transparent;
+  border: 1px solid #00AEEF;
+}
+
+.search__btn_wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.search__btn {
+  border-radius: 30px;
+  outline: none;
+  color: #FFFFFF;
+  background-image: linear-gradient(45deg, rgba(49, 170, 226, 1) 0%, rgba(157, 53, 192, 1) 100%);
+  padding: 1rem 2rem;
+  border: none;
+  position: absolute;
+  right: 26%;
+  top: 10%;
+}
+
+.search__btn:hover {
+  cursor: pointer;
+}
 
 
 
@@ -341,5 +344,23 @@
   .top {
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@media all and (max-width: 1345px) {
+  .domain-prize_list {
+    flex-direction: column;
+    width: 15%;
+    text-align: left;
+  }
+}
+
+@media all and (max-width: 1100px) {
+  .search__wrapper {
+    background: url("images/Ellipse_4.png");
+    background-repeat: no-repeat;
+    background-color: #263545;
+    background-position: center;
+    background-size: contain;
   }
 }
