@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width>, initial-scale=1.0" />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <title>BHosting</title>
 </head>
@@ -88,7 +89,7 @@
           </section>
         </section>
         <section class="top__icons">
-          <section class="top__icons_personalization basket"></section>
+          <section class="top__icons_personalization cart"></section>
           <section class="top__icons_personalization login"></section>
         </section>
       </section>
@@ -162,22 +163,23 @@
           <section class="card">
             <section class="card__item">
               <section class="card__image percent">
-                <p>40%</p>
+                <img src="images/5-layers (2).png" />
               </section>
               <p class="card__description"><b>save money more then 40%</b></p>
             </section>
 
             <section class="card__item">
               <section class="card__image dollar">
-                <p>$1.3</p>
+                <img src="images/5-layers (1).png" />
               </section>
               <p class="card__description"><b>starting at $1.45/year</b></p>
             </section>
 
             <section class="card__item">
-              <section class="card__image_wrapper">
-                <section class="card__image support"></section>
+              <section class="card__image support">
+                <img src="images/5-layers.png" />
               </section>
+
               <p class="card__description">
                 <b>Support <br />
                   24/7 days</b>
@@ -198,12 +200,91 @@
   <!-- about -->
 
   <article class="about">
-    <section class="wrapper">
+    <section class="wrapper wrapper_display-flex">
       <section class="experience">
-        <h2>experienced we are!</h2>
-        <p>Without the best web hosting, your ability to run a successful</p>
-        <p>We are experienced, last 15 years we lead the world in hosting </p>
-        <section class="experience__card"></section>
+        <section class="experience-info">
+          <h3 class="experience-info__title">experienced we are!</h3>
+          <p class="experience-info__text">
+            Without the best web hosting, your ability to run a successful website is going to be seriously hindered.
+            There is a
+            dizzying array of web hosting providers competing for your business.
+          </p>
+          <p class="experience-info__text">
+            We are experienced, last 15 years we lead the world in hosting service. if you need any hosting services? we
+            are eagerly
+            wating for you.
+          </p>
+          <section class="experience__card">
+            <section class="experience__card_left">
+              <section class="experience__card_description">
+                <section class="experience__item experience__item-hosted"></section>
+                <section class="experience__item_wrapper">
+                  <h4 class="experience__card_title">Website hosted</h4>
+                  <p class="experience__card_number">90000+</p>
+                </section>
+              </section>
+              <section class="experience__card_description">
+                <section class="experience__item experience__item-customer"></section>
+                <section class="experience__item_wrapper">
+                  <h4 class="experience__card_title">happy customer</h4>
+                  <p class="experience__card_number">49000+</p>
+                </section>
+              </section>
+            </section>
+            <section class="experience__card_right">
+              <section class="experience__card_description">
+                <section class="experience__item experience__item-domain"></section>
+                <section class="experience__item_wrapper">
+                  <h4 class="experience__card_title">domain registered</h4>
+                  <p class="experience__card_number">150000+</p>
+                </section>
+              </section>
+              <section class="experience__card_description">
+                <section class="experience__item experience__item-data">
+                </section>
+                <section class="experience__item_wrapper">
+                  <h4 class="experience__card_title">Data transferred</h4>
+                  <p class="experience__card_number">80542+</p>
+                </section>
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+      <section class="experience-img">
+        <img src="images/00-bankirane@1X.png" alt="" width="500">
+      </section>
+    </section>
+  </article>
+
+  <!-- search -->
+
+  <article class="search">
+    <section class="search__wrapper">
+      <section class="search-info">
+        <h2 class="title title__search_white">Find your domain name</h2>
+        <p>Starting From $1.65 Per Year!</p>
+        <form class="box-search">
+          <span class="icon"><i class="fa fa-search"></i></span>
+          <input type="eg-search" id="eg-search" placeholder="eg.search.com" />
+          <button class="search__btn" type="submit">SEARCH</button>
+        </form>
+        <section class="domain-prize">
+          <ul class="domain-prize_list">
+            <div class="square">
+              <li class="domain-prize_item">.com / $3</li>
+            </div>
+            <div class="square">
+              <li class="domain-prize_item">.org / $2</li>
+            </div>
+            <div class="square">
+              <li class="domain-prize_item">.net / $2</li>
+            </div>
+            <div class="square">
+              <li class="domain-prize_item">.edu/ $2</li>
+            </div>
+          </ul>
+        </section>
       </section>
     </section>
   </article>
