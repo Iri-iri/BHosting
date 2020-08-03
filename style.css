@@ -300,14 +300,11 @@
   font-family: "Open Sans";
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between;
-  align-items: center; */
 }
 
 .title {
   font-size: 2rem;
   font-weight: 700;
-  line-height: 24px;
   text-transform: uppercase;
   padding-bottom: 28px;
 }
@@ -322,7 +319,6 @@
   border: 1px solid #00aeef;
   border-radius: 30px;
   padding-left: 60px;
-  /* padding-right: 405px; */
   width: 50%;
   outline: none;
 }
@@ -449,5 +445,26 @@
     background-color: #263545;
     background-position: center;
     background-size: contain;
+  }
+
+  .experience__card {
+    flex-wrap: wrap;
+  }
+
+  .wrapper_display-flex {
+    flex-wrap: wrap;
+  }
+  
+  .experience-img {
+  padding-left: 0;
+  }
+
+  .search__btn {
+    position: static;
+  }
+
+  .box-search input#eg-search {
+    width: 100%;
+    min-width: 220px;
   }
 }
